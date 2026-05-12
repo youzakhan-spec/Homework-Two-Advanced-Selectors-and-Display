@@ -1,0 +1,148 @@
+/* ========================================
+   Skip to Main Content – accessibility
+   ======================================== */
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 0;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  z-index: 1000;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ========================================
+   Base / body
+   ======================================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ========================================
+   Header
+   ======================================== */
+header {
+  background-color: #e8f4f8;
+}
+
+/* ========================================
+   Nav  – step 4: inline-block, ~80% width
+   ======================================== */
+nav {
+  background-color: #333333;
+  display: inline-block;
+  width: 80%;
+}
+
+/* step 5: descendant selector – only images inside nav */
+nav img {
+  width: 10%;
+  vertical-align: middle;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+nav a:hover {
+  background-color: #555555;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* step 3: original li rule commented out */
+/* li { display: inline-block; width: 200px; margin: 0; padding: 0; } */
+
+/* ========================================
+   Main content
+   ======================================== */
+main {
+  background-color: bisque;
+  font-size: 18px;
+}
+
+main div {
+  text-align: center;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+footer {
+  background-color: #b7b7b7;
+}
+
+/* Ensure footer links pass WAVE color contrast on the gray background */
+footer a {
+  color: #1a1a1a;
+}
+
+footer a:hover {
+  color: #000000;
+}
+
+/* ========================================
+   Headings & paragraphs
+   ======================================== */
+h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #1a4d64;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ========================================
+   Images (global default)
+   ======================================== */
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  margin: 5px;
+}
+
+/* ========================================
+   .grid  – step 6, 7, 8
+   Two-column grid, each column ~40%
+   ======================================== */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: start;
+  row-gap: 15px;
+}
+
+/* step 7: descendant selector – only images inside .grid */
+.grid img {
+  width: 100%;
+}
+
+/* ========================================
+   .flex  – step 9
+   Flex layout for neighborhood photo gallery
+   ======================================== */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
